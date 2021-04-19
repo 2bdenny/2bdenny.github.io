@@ -206,3 +206,70 @@ adb -s ip:port logcat -s Unity # 查看Unity输出
 ## [Unity加载png文件为贴图]
 1. [读取png文件为`byte[]`](https://stackoverflow.com/a/23657493/4291968)
 2. [加载`byte[]`到texture2d.LoadImage函数](https://docs.unity3d.com/ScriptReference/ImageConversion.html)
+
+## [Unity IMGUI的TreeView怎么override KeyEvent获取Key](https://raw.githubusercontent.com/Unity-Technologies/UnityCsReference/master/Editor/Mono/BuildPlayerSceneTreeView.cs)
+
+## [Maya在新场景中自动创建模型并导出为fbx文件]
+```
+# -*- coding: utf-8 -*-
+import os
+import random
+import sys
+
+def GenRandomFbx(id):
+    # Launch Env
+    import maya.standalone
+    maya.standalone.initialize("Python")
+    import maya.cmds as cmds
+    import maya.mel as mel
+    cmds.loadPlugin('fbxmaya')
+
+    # Gen Model
+    x = 0
+    y = 0
+    cmds.polyCube(name = 'cube')
+    for i in range(5):
+        cmds.polyCube(name = 'cube' + str(i))
+        x += random.randint(5, 10)
+        y += random.randint(1, 5)
+        cmds.move(x, y, 0)
+    cmds.select(all = True)
+    cmds.scale(random.randint(1, 7), random.randint(1, 7), random.randint(1, 7))
+    
+    # Save to File
+    cmd = 'FBXExport -f "D:/workspace/TestMayaScript/test' + str(id) + '.fbx"'
+    mel.eval(cmd)
+
+# Generate Random Fbx
+currentId = len(os.listdir('D:/workspace/TestMayaScript/'))
+GenRandomFbx(currentId)
+```
+
+## [Unity编辑器报错`Dimensions of color surface does not match dimensions of depth surface`](https://forum.unity.com/threads/bug-dimensions-of-color-surface-does-not-match-dimensions-of-depth-surface.849676/#post-6187809)
+- 解决方案: 把SceneView里面的灯光关了
+
+## [Python里读取不同编码的文件](https://docs.python.org/3/library/codecs.html)
+```
+def ReadFile(filePath):
+    encodings = ['utf_8', 'ascii', 'big5', 'big5hkscs', 'gb2312', 'gbk', 'gb18030', 'hz', 'utf_16', 'utf_16_be', 'utf_16_le', 'utf_7', 'cp037', 'cp424', 'cp437', 'cp500', 'cp737', 'cp775', 'cp850', 'cp852', 'cp855', 'cp856', 'cp857', 'cp860', 'cp861', 'cp862', 'cp863', 'cp864', 'cp865', 'cp866', 'cp869', 'cp874', 'cp875', 'cp932', 'cp949', 'cp950', 'cp1006', 'cp1026', 'cp1140', 'cp1250', 'cp1251', 'cp1252', 'cp1253', 'cp1254', 'cp1255', 'cp1256', 'cp1257', 'cp1258', 'euc_jp', 'euc_jis_2004', 'euc_jisx0213', 'euc_kr', 'iso2022_jp', 'iso2022_jp_1', 'iso2022_jp_2', 'iso2022_jp_2004', 'iso2022_jp_3', 'iso2022_jp_ext', 'iso2022_kr', 'latin_1', 'iso8859_2', 'iso8859_3', 'iso8859_4', 'iso8859_5', 'iso8859_6', 'iso8859_7', 'iso8859_8', 'iso8859_9', 'iso8859_10', 'iso8859_13', 'iso8859_14', 'iso8859_15', 'johab', 'koi8_r', 'koi8_u', 'mac_cyrillic', 'mac_greek', 'mac_iceland', 'mac_latin2', 'mac_roman', 'mac_turkish', 'ptcp154', 'shift_jis', 'shift_jis_2004', 'shift_jisx0213']
+    
+    count = 0
+    for e in encodings:
+        with open(filePath, 'r', encoding = e) as fh:
+            try:
+                content = fh.read()
+            except UnicodeDecodeError:
+                # Nothing
+                count += 1
+            except UnicodeError:
+                # Nothing
+                count += 1
+            else:
+                return content, e
+```
+
+## [关于Unity的MenuItem的Priority的排列](http://answers.unity.com/answers/810239/view.html)
+
+## [UI画线]
+- UILineRenderer(Unity UI Extension库的)
+
