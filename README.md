@@ -1,3 +1,9 @@
+---
+layout: page
+title: Solutions
+permalink: /solutions/
+---
+
 # Solution Database
 > 是解决方案仓库哦
 
