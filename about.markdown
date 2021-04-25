@@ -17,8 +17,8 @@ permalink: /about/
 - 2018.06-2018.08  ![Tencent](/assets/img/intern.png){: height="20" }  Back end development intern - 后台开发实习生
 
 ## Education
+- 2016.09-2019.06 ![Nanjing University](/assets/img/nju.png){: height="24" } ![CS](/assets/img/cs.png){: height="24" } ![ICS](/assets/img/ics.png){: height="24" } **M. Sc degree**, Dept. of Computer Science and Technology, Nanjing University - 南京大学计算机科学与技术系 硕士
 - 2012.09-2016.06 ![Nanjing University](/assets/img/nju.png){: height="24" } ![CS](/assets/img/cs.png){: height="24" } **B. Sc degree**, Dept. of Computer Science and Technology, Nanjing University - 南京大学计算机科学与技术系 本科
-- 2012.09-2016.06 ![Nanjing University](/assets/img/nju.png){: height="24" } ![CS](/assets/img/cs.png){: height="24" } ![ICS](/assets/img/ics.png){: height="24" } **M. Sc degree**, Dept. of Computer Science and Technology, Nanjing University - 南京大学计算机科学与技术系 硕士
 
 <!-- You can find the source code for Minima at GitHub:
 [jekyll][jekyll-organization] /
