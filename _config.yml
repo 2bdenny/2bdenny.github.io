@@ -18,19 +18,29 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 2bdenny's Blog
+title: 2bdenny's Blog - 我的博客
 email: denny.syj@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Solution database, projects, resume(pending...) and others.
+  Work for Netease now. 在网易从事Unity客户端开发工作.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  2bdenny
 
+header_pages:
+  - about.markdown
+
+defaults:
+  - scope:
+    path: "assets/img"
+  values:
+    image: true
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-toc
 
 # Exclude from processing.
 # The following items will not be processed, by default.

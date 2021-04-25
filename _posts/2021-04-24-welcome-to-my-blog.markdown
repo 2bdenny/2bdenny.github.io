@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Welcome to 2bdenny's homepage!"
-date:   2021-04-24 14:04:58 +0100
-categories: jekyll update
+title:  "Welcome to 2bdenny's blog! - 第一篇博客"
+date:   2021-04-24
+categories: blogs
+author: 2bdenny
 ---
 
 Welcome, content will be added in the future.
