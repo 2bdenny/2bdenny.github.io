@@ -6,8 +6,6 @@ categories: blogs
 author: 2bdenny
 ---
 
-{:toc}
-
 > 开发指引
 
 # Visual Tree

@@ -6,8 +6,6 @@ categories: blogs
 author: 2bdenny
 ---
 
-{:toc}
-
 # Chpt 8
 ## Vertex Skinning
 - 顶点位置、模型法线数据的计算公式，需要注意法线是需要先把变化矩阵取逆然后转置

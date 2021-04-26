@@ -6,8 +6,6 @@ categories: blogs
 author: 2bdenny
 ---
 
-{:toc}
-
 ## Chpt 1 Intro
 > - 游戏通常需要30、60、72或者更高的fps
 > - 电影通常是24帧，但是把每一帧播放2到4次来避免频闪
