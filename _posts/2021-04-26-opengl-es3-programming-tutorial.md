@@ -4,8 +4,9 @@ title:  "OpenGL ES3.0 Programming Tutorial Notes - OpenGL ES3.0编程指南笔�
 date:   2021-04-26
 categories: blogs
 author: 2bdenny
-toc: true
 ---
+
+{:toc}
 
 # Chpt 8
 ## Vertex Skinning

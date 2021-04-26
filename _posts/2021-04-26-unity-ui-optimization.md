@@ -4,8 +4,9 @@ title:  "Unity UI Optimization Tutorial Notes - Unity UI优化教程笔记"
 date:   2021-04-26
 categories: blogs
 author: 2bdenny
-toc: true
 ---
+
+{:toc}
 
 # 渲染细节
 - 所有UnityUI的集合体都会在一个Transparent队列里按照次序进行渲染. **每一个多边形的每一个点都会被采样! 即视这个点被其他的不透明多边形所覆盖了也一样会参与计算! 所以UI重叠会消耗性能!**

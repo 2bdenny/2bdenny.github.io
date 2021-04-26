@@ -4,8 +4,9 @@ title:  "Realtime Rendering 4th Notes - 实时渲染4th笔记"
 date:   2021-04-26
 categories: blogs
 author: 2bdenny
-toc: true
 ---
+
+{:toc}
 
 ## Chpt 1 Intro
 > - 游戏通常需要30、60、72或者更高的fps
