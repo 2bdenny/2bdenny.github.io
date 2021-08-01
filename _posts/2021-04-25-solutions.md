@@ -276,6 +276,42 @@ def ReadFile(filePath):
 ### [UI画线]
 - UILineRenderer(Unity UI Extension库的)
 
+## [Unity无法调用System.Web里面的某些API](https://forum.unity.com/threads/the-name-httputility-does-not-exist-in-the-current-context.732281/#post-4949003)
+
+## [Unity每次Play的时候没有清理单例]
+```
+#if UNITY_EDITOR
+            EditorApplication.playModeStateChanged += state =>
+            {
+                if (state == PlayModeStateChange.EnteredPlayMode)
+                {
+                    m_GraphInit = false;
+                }
+            };
+#endif
+```
+
+## [如何使用UnityEditor内置的icon]
+```
+// uss用法：icon名字参见https://github.com/halak/unity-editor-icons
+background-image: resource('d_icon dropdown@2x');
+// 代码用法
+var builtIn = EditorGUIUtility.IconContent(name);
+if (builtIn != null && builtIn.image != null)
+{
+    return builtIn.image as Texture2D;
+}
+```
+
+## [unity自带的序列化反序列化](https://stackoverflow.com/a/36244111/4291968)
+
+## [Perforce里面不同路径对应自定义的不同文件夹](https://www.perforce.com/manuals/p4guide/Content/P4Guide/configuration.workspace_view.multiple_drives.html?TocPath=Configure%20clients%7CConfigure%20workspace%20views%7C_____14)
+
+## [Unity打包时wwise bank报violation相关的错](https://www.audiokinetic.com/qa/5718/ioexception-sharing-violation-on-path)
+
+## [Unity Resolve package报错：unexpected token in JSON at position 0]
+- 使用Perforce追踪的json文件，应该使用text type，而不是utf8，[重新添加或者edit为text](https://www.perforce.com/manuals/v15.1/p4guide/appendix.filetypes.html)
+
 # Miscellaneous
 
 ### 个人SVN配置和使用
