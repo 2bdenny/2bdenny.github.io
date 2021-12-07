@@ -324,3 +324,5 @@ if (builtIn != null && builtIn.image != null)
 ### [多台电脑使用同一套键鼠](http://home.netease.com/#/forum/post/14666)
 - 首先，Microsoft早就发现了这个问题，并且对应开发出了[Mouse Without BOrders](https://www.microsoft.com/en-us/download/details.aspx?id=35460) 软件（巨硬！）
 - 或者synergy
+
+### [Windows远程连接保持分辨率一致](https://blog.csdn.net/qq_36365520/article/details/109425913)
