@@ -41,6 +41,10 @@ author: 2bdenny
 - [重命名导致引用丢失]()
   - 在`DefaultEngine.ini`里面加上对应的redirect就可以了,不用一个个修复
 
+### Debug
+- [关于Rider通过Attach的方式Debug打不到断点](https://youtrack.jetbrains.com/issue/RIDER-81241/Cannot-set-breakpoint-after-attaching-debugger-on-UE5?_gl=1*5aoigu*_ga*NzA1NzgxNTU2LjE2ODM2MjMxNDk.*_ga_9J976DJZ68*MTY4Njg4MTI5MC4xNS4xLjE2ODY4ODE0OTIuMC4wLjA.&_ga=2.191218026.1586200720.1686799260-705781556.1683623149#focus=Comments-27-6982283.0-0)
+  - [windows的说明](https://social.msdn.microsoft.com/Forums/en-US/0de597fb-9496-4297-8e23-15fd24b998f5/quotattach-to-processquot-is-not-loading-more-than-500-dlls?forum=vsdebug)
+
 ### Log
 - [怎么定义自己的Log分类](https://forums.unrealengine.com/t/where-do-i-put-declare-log-category-extern/302371/3)
 
