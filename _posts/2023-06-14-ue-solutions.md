@@ -44,6 +44,9 @@ author: 2bdenny
 ### Log
 - [怎么定义自己的Log分类](https://forums.unrealengine.com/t/where-do-i-put-declare-log-category-extern/302371/3)
 
+### Math
+- [Easing曲线](https://github.com/noisecrime/Unity-EasingLibraryVisualisation)
+
 ### Sequence
 - [官方示例Slay Animation](https://www.unrealengine.com/en-US/spotlights/mold3d-studio-to-share-slay-animated-content-sample-project-with-unreal-engine-community)
 
