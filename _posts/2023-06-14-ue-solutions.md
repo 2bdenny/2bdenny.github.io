@@ -21,6 +21,7 @@ author: 2bdenny
 ### Camera - 相机
 - [UE相机基础和使用](https://zhuanlan.zhihu.com/p/564571102)
 - [一种推荐的自建CameraManager模块方案](https://forums.unrealengine.com/t/setting-the-active-camera-on-an-aplayercontroller/417122/3?u=2bdenny)
+- [相机的Damping问题及其解决方案](https://www.rorydriscoll.com/2016/03/07/frame-rate-independent-damping-using-lerp/)
 
 ### CDO
 - [怎样可以让继承UObject的类不创建CDO](https://forums.unrealengine.com/t/how-do-i-prevent-instances-of-uobjects-from-being-created-automatically/345850/2?u=2bdenny)
