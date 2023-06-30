@@ -64,6 +64,7 @@ author: 2bdenny
 ### Tools
 - [一个开源的icon库](https://github.com/MahApps/MahApps.Metro.IconPacks)
 - [怎么把UE的蓝图做成网页](https://blueprintue.com/)
+- [C#程序怎么设置运行程序权限](https://philippsen.wordpress.com/tag/requestedexecutionlevel-manifest/)
 - [让Confluence支持自己插入代码](https://marketplace.atlassian.com/apps/1215813/iframes-for-confluence?hosting=server&tab=support)
 - [怎么使用7zr.exe压缩和解压缩文件，以及解压缩并保留目录结构]()
   - 7zr.exe的，一个是压缩时文件名跟压缩算法要对应，应该用7z，一个是解压参数e -o是解压并不保留文件结构，x -o才是解压并保留文件结构
