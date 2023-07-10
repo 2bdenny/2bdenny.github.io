@@ -69,3 +69,5 @@ author: 2bdenny
 - [怎么使用7zr.exe压缩和解压缩文件，以及解压缩并保留目录结构]()
   - 7zr.exe的，一个是压缩时文件名跟压缩算法要对应，应该用7z，一个是解压参数e -o是解压并不保留文件结构，x -o才是解压并保留文件结构
 - [bat脚本新建快捷方式添加icon](https://stackoverflow.com/a/59440537/4291968)
+- [VS报错:MSB3821 无法处理文件 resx，因为它位于 Internet 或受限区域中，或者文件上具有 Web 标记。要想处理这些文件，请删除 Web 标记。]()
+  - `Get-ChildItem -Path '<YOUR-SOLUTION-PATH>' -Recurse | Unblock-File`
