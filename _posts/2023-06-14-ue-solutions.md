@@ -58,6 +58,9 @@ while(true)
 }
 ```
 
+### Level
+- [怎么给地图设置自己的gamemode](https://forums.unrealengine.com/t/change-a-map-game-mode/144690/2?u=shen_yuju)
+
 ### Log
 - [怎么定义自己的Log分类](https://forums.unrealengine.com/t/where-do-i-put-declare-log-category-extern/302371/3)
 
