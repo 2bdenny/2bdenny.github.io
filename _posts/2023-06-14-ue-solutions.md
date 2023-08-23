@@ -32,6 +32,10 @@ author: 2bdenny
 - [VS编译]()
   - 应该选择 "Development Editor"
 
+### Collision
+- 有时两个体型差别巨大的Pawn之间因为避障而出现奇怪的碰撞（小个子不能从大个子缝隙间通过等等），可以通过关闭RVOAvoidance来解决
+  - 更好的方法应该是给大家分到合理的Group里面
+
 ### Crash
 - [Gpu crash/d3d device removed error](https://forums.unrealengine.com/t/gpu-crash-d3d-device-removed-error/514360/4?u=2bdenny)
 - [UE里面的RiderLink插件编译报错]()
