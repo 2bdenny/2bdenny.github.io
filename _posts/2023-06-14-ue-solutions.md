@@ -65,6 +65,9 @@ while(true)
 ### Level
 - [怎么给地图设置自己的gamemode](https://forums.unrealengine.com/t/change-a-map-game-mode/144690/2?u=shen_yuju)
 
+### Localization
+- [UE里怎么使用本地化文本对UI进行本地化](https://www.youtube.com/watch?v=QOjSnqVVVV8)
+
 ### Log
 - [怎么定义自己的Log分类](https://forums.unrealengine.com/t/where-do-i-put-declare-log-category-extern/302371/3)
 
