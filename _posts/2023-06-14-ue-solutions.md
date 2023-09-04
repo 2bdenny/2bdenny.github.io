@@ -33,6 +33,8 @@ author: 2bdenny
   - 应该选择 "Development Editor"
 - [一直弹Error C4430 :默认为int之类的编译报错]()
   - https://forums.unrealengine.com/t/error-c4430-missing-type-specifier-int-assumed-note-c-does-not-support-default-int/487372/3
+- [C4458: declaration of "InitialLocation" hides class member 声明隐藏了类成员](https://stackoverflow.com/a/67473926/4291968)
+  - 函数参数名不可以与class的成员名相同 F**k c++
 
 ### Collision
 - 有时两个体型差别巨大的Pawn之间因为避障而出现奇怪的碰撞（小个子不能从大个子缝隙间通过等等），可以通过关闭RVOAvoidance来解决
