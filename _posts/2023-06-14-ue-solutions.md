@@ -82,6 +82,14 @@ void AMyClass::DoIt(const FInputActionValue& Value, bool bMyCustomParameter) {}
   - struct必须是ustruct
   - struct的field必须是uproperty
   - struct的field name必须跟json的key name完全一致
+- [JsonObject怎么转换为字符串]()
+```
+FString OutputString;
+TSharedRef< TJsonWriter<> > Writer = TJsonWriterFactory<>::Create(&OutputString);
+FJsonSerializer::Serialize(JsonObject.ToSharedRef(), Writer);
+
+UE_LOG(LogTemp, Warning, TEXT("resulting jsonString -> %s"), *OutputString);
+```
 
 ### Level
 - [怎么给地图设置自己的gamemode](https://forums.unrealengine.com/t/change-a-map-game-mode/144690/2?u=shen_yuju)
