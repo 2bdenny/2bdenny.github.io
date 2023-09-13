@@ -78,6 +78,10 @@ void AMyClass::DoIt(const FInputActionValue& Value, bool bMyCustomParameter) {}
 ### Json
 - [Json解析字符串到FJsonObject失败]()
   - `FJsonSerializer::Deserialize`这个函数遇到尾","就会报错
+- [怎么把Json字符串转化为对应的struct](https://stackoverflow.com/a/32962292/4291968)
+  - struct必须是ustruct
+  - struct的field必须是uproperty
+  - struct的field name必须跟json的key name完全一致
 
 ### Level
 - [怎么给地图设置自己的gamemode](https://forums.unrealengine.com/t/change-a-map-game-mode/144690/2?u=shen_yuju)
