@@ -66,6 +66,15 @@ while(true)
 }
 ```
 
+### Input
+- [怎么让BindAction支持带参数的Handler]()
+```
+EnhancedInputComponent->BindAction<AMyClass, bool>(IA_A, ETriggerEvent::Triggered, this, &AMyClass::DoIt, true);
+void AMyClass::DoIt(const FInputActionValue& Value, bool bMyCustomParameter) {}
+```
+- [怎么实现InputAction的覆盖]()
+  - 将新的InputAction放到新的IMC里面，IMC注册的时候设置更高的Priority
+
 ### Level
 - [怎么给地图设置自己的gamemode](https://forums.unrealengine.com/t/change-a-map-game-mode/144690/2?u=shen_yuju)
 
