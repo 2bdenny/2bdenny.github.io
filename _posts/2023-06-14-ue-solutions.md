@@ -121,3 +121,4 @@ UE_LOG(LogTemp, Warning, TEXT("resulting jsonString -> %s"), *OutputString);
 - [bat脚本新建快捷方式添加icon](https://stackoverflow.com/a/59440537/4291968)
 - [VS报错:MSB3821 无法处理文件 resx，因为它位于 Internet 或受限区域中，或者文件上具有 Web 标记。要想处理这些文件，请删除 Web 标记。]()
   - `Get-ChildItem -Path '<YOUR-SOLUTION-PATH>' -Recurse | Unblock-File`
+- [UE怎么用脚本创建asset](https://udn.unrealengine.com/s/article/How-To-Create-New-Assets-in-C)
