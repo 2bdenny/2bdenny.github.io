@@ -112,6 +112,7 @@ UE_LOG(LogTemp, Warning, TEXT("resulting jsonString -> %s"), *OutputString);
 - [Level切换的回调](https://forums.unrealengine.com/t/how-can-i-execute-code-immediately-after-loading-a-non-streaming-level/351320?u=2bdenny)
 
 ### Tools
+- [怎么用代码清空、写入、保存StringTable数据](https://pafuhana1213.hatenablog.com/entry/2023/01/14/153800)
 - [一个开源的icon库](https://github.com/MahApps/MahApps.Metro.IconPacks)
 - [怎么把UE的蓝图做成网页](https://blueprintue.com/)
 - [C#程序怎么设置运行程序权限](https://philippsen.wordpress.com/tag/requestedexecutionlevel-manifest/)
