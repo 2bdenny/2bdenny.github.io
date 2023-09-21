@@ -13,6 +13,37 @@ author: 2bdenny
 
 ### Audio - 音频
 - [怎么在切换关卡时保留Actor, 以及怎么让WWise的Listener Actor一直存在于关卡中](https://www.cnblogs.com/lingchuL/p/14751703.html#5184301)
+- [怎么监听event结束事件?]()
+```
+class ATest : public AActor
+{
+public:
+    FOnAkPostEventCallback OnAkPostEventDelegate;
+
+    virtual void BeginPlay() override;
+    virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
+    
+    UFUNCTION()
+    void OnAkPostEventCallback(EAkCallbackType CallbackType, UAkCallbackInfo* CallbackInfo);
+
+    void LetWwiseSpeakSomething(AActor* Actor, UAkAudioEvent* AkEvent);
+};
+
+void ATest::BeginPlay()
+{
+    OnAkPostEventDelegate.BindDynamic(this, &ATest::OnAkPostEventCallback);
+}
+
+void ATest::EndPlay(const EEndPlayReason::Type EndPlayReason)
+{
+    OnAkPostEventDelegate.Clear();
+}
+
+void ATest::LetWwiseSpeakSomething(AActor* Actor, UAkAudioEvent* AkEvent)
+{
+    UAkGameplayStatics::PostEvent(AkEvent, Actor, AK_EndOfEvent, OnAkPostEventDelegate);
+}
+```
 
 ### Blueprint - 蓝图
 - [怎么定义多output pin的蓝图节点](https://forums.unrealengine.com/t/how-to-define-a-function-with-multiple-return-values-as-blueprint-in-c/16934/3?u=2bdenny)
