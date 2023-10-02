@@ -156,3 +156,6 @@ UE_LOG(LogTemp, Warning, TEXT("resulting jsonString -> %s"), *OutputString);
   - `Get-ChildItem -Path '<YOUR-SOLUTION-PATH>' -Recurse | Unblock-File`
 - [UE怎么用脚本创建asset](https://udn.unrealengine.com/s/article/How-To-Create-New-Assets-in-C)
 - [WPF怎么使用TreeView](https://wpf.2000things.com/2017/09/28/1219-expanding-all-nodes-in-a-treeview-by-default/)
+
+### UI
+- [LogSlate: Warning: Slate: Had to block on waiting for a draw buffer.](https://forums.unrealengine.com/t/slate-waiting-on-draw-buffer/1295986/2?u=2bdenny)
