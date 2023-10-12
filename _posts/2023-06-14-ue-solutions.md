@@ -107,6 +107,10 @@ void AMyClass::DoIt(const FInputActionValue& Value, bool bMyCustomParameter) {}
 - [怎么实现InputAction的覆盖]()
   - 将新的InputAction放到新的IMC里面，IMC注册的时候设置更高的Priority
 
+### Interface
+- [UE怎么实现Interface](https://docs.unrealengine.com/5.3/en-US/interfaces-in-unreal-engine/)
+    - 太怪了
+
 ### Json
 - [Json解析字符串到FJsonObject失败]()
   - `FJsonSerializer::Deserialize`这个函数遇到尾","就会报错
