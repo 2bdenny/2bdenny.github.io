@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to 2bdenny's blog! - 第一篇博客"
+title:  "Notes of GDC-Talk 50 Camera Mistakes (50个错误的相机用法)"
 date:   2021-04-24
 categories: blogs
 author: 2bdenny
@@ -8,7 +8,7 @@ author: 2bdenny
 
 ---
 # [GDC Talk](https://www.gdcvault.com/play/1020460/50-Camera) 50 Camera Mistakes (50个错误的相机用法)
-1. 当其他相机（固定、第一人称）可用的时候，用了动态相机
+- 当其他相机（固定、第一人称）可用的时候，用了动态相机
 - 关卡和相机不匹配
 - 使用global坐标和四元数来记录相机状态
 	- yaw pitch roll； distance from pivot； lateral、vertical offsets for framing、 fov
