@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Notes of GDC-Talk 50 Camera Mistakes (50个错误的相机用法)"
-date:   2021-04-24
+date:   2023-10-20
 categories: blogs
 author: 2bdenny
 ---
