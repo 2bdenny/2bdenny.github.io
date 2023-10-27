@@ -15,6 +15,7 @@ author: 2bdenny
 
 ### C++怎么调用Python
 - 因此这个函数的存在，就可以考虑用C++写Slate代码，然后用Python写功能，再通过它调用一下脚本
+
 ```
 const FFilePath ScriptPath; // 这里的ScriptPath可以设置为一个setting的变量，然后直接通过File Selector获取
 const FString ScriptArguments;
@@ -56,6 +57,7 @@ GEngine->Exec(NULL, *CommandArg);
 
 ### Python的类型转换
 - 每个unreal名空间下的class类型，都提供了cast函数进行转换，语法如下
+
 ```
 unreal.Skeleton.cast(one_loaded_asset)
 ```
