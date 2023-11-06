@@ -44,6 +44,7 @@ void ATest::LetWwiseSpeakSomething(AActor* Actor, UAkAudioEvent* AkEvent)
     UAkGameplayStatics::PostEvent(AkEvent, Actor, AK_EndOfEvent, OnAkPostEventDelegate);
 }
 ```
+- [怎么设置Wwise工程的ignore文件](https://blog.audiokinetic.com/en/version-control-a-wwise-project/)
 
 ### Blueprint - 蓝图
 - [怎么定义多output pin的蓝图节点](https://forums.unrealengine.com/t/how-to-define-a-function-with-multiple-return-values-as-blueprint-in-c/16934/3?u=2bdenny)
