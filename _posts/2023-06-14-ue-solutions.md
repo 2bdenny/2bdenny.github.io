@@ -164,6 +164,7 @@ UE_LOG(LogTemp, Warning, TEXT("resulting jsonString -> %s"), *OutputString);
 - [WPF怎么使用TreeView](https://wpf.2000things.com/2017/09/28/1219-expanding-all-nodes-in-a-treeview-by-default/)
 - [怎么在运行时获取某个文件夹下所有某种类型的资源文件]()
     - 使用GetAssetRegistry的GetAssets节点，然后MakeARFilter，Package Paths填UE路径/Game/Levels，ClassName填写Copy Reference粘贴出来的类型名称（Blueprint或者World等等）
+- [UE的Python教程](https://filipsivak.medium.com/python-in-unreal-engine-the-undocumented-parts-7585434f5d76)
 
 ### UI
 - [LogSlate: Warning: Slate: Had to block on waiting for a draw buffer.](https://forums.unrealengine.com/t/slate-waiting-on-draw-buffer/1295986/2?u=2bdenny)
