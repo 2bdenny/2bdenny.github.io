@@ -167,6 +167,7 @@ UE_LOG(LogTemp, Warning, TEXT("resulting jsonString -> %s"), *OutputString);
 - [UE的Python教程](https://filipsivak.medium.com/python-in-unreal-engine-the-undocumented-parts-7585434f5d76)
 - [怎么获得Python脚本的输出]
     - 建议直接在python里面print，然后通过UE里面[监听Console Log](https://forums.unrealengine.com/t/how-to-subscribe-to-redirect-log-messages/354561/8?u=shen_yuju)获取对应字符串
+- [怎么写一个获取Level里Actor的Selector](https://forums.unrealengine.com/t/adding-an-editor-actor-picker-via-slate/432643/4?u=shen_yuju)
 
 ### UI
 - [LogSlate: Warning: Slate: Had to block on waiting for a draw buffer.](https://forums.unrealengine.com/t/slate-waiting-on-draw-buffer/1295986/2?u=2bdenny)
