@@ -14,6 +14,7 @@ author: 2bdenny
 ### Audio - 音频
 - [怎么在切换关卡时保留Actor, 以及怎么让WWise的Listener Actor一直存在于关卡中](https://www.cnblogs.com/lingchuL/p/14751703.html#5184301)
 - [怎么监听event结束事件?]()
+
 ```
 class ATest : public AActor
 {
@@ -44,6 +45,7 @@ void ATest::LetWwiseSpeakSomething(AActor* Actor, UAkAudioEvent* AkEvent)
     UAkGameplayStatics::PostEvent(AkEvent, Actor, AK_EndOfEvent, OnAkPostEventDelegate);
 }
 ```
+
 - [怎么设置Wwise工程的ignore文件](https://blog.audiokinetic.com/en/version-control-a-wwise-project/)
 
 ### Blueprint - 蓝图
@@ -78,10 +80,12 @@ void ATest::LetWwiseSpeakSomething(AActor* Actor, UAkAudioEvent* AkEvent)
 - [Gpu crash/d3d device removed error](https://forums.unrealengine.com/t/gpu-crash-d3d-device-removed-error/514360/4?u=2bdenny)
 - [UE里面的RiderLink插件编译报错]()
   - 添加两条pragma
+
 ```
 #pragma warning(push)
 #pragma warning(disable : 4250)
 ```
+
 - [重命名导致引用丢失]()
   - 在`DefaultEngine.ini`里面加上对应的redirect就可以了,不用一个个修复
 
@@ -91,6 +95,7 @@ void ATest::LetWwiseSpeakSomething(AActor* Actor, UAkAudioEvent* AkEvent)
 - [关于exe一打开就crash]
   - 方案1，命令行启动exe时添加参数`-WaitForDebugger`
   - 方案2
+
 ```
 在main函数里面，然后给b++这个打个断点
 static int b =0;
@@ -102,10 +107,12 @@ while(true)
 
 ### Input
 - [怎么让BindAction支持带参数的Handler]()
+
 ```
 EnhancedInputComponent->BindAction<AMyClass, bool>(IA_A, ETriggerEvent::Triggered, this, &AMyClass::DoIt, true);
 void AMyClass::DoIt(const FInputActionValue& Value, bool bMyCustomParameter) {}
 ```
+
 - [怎么实现InputAction的覆盖]()
   - 将新的InputAction放到新的IMC里面，IMC注册的时候设置更高的Priority
 
@@ -121,6 +128,7 @@ void AMyClass::DoIt(const FInputActionValue& Value, bool bMyCustomParameter) {}
   - struct的field必须是uproperty
   - struct的field name必须跟json的key name完全一致
 - [JsonObject怎么转换为字符串]()
+
 ```
 FString OutputString;
 TSharedRef< TJsonWriter<> > Writer = TJsonWriterFactory<>::Create(&OutputString);
