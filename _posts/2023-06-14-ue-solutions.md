@@ -152,6 +152,7 @@ UE_LOG(LogTemp, Warning, TEXT("resulting jsonString -> %s"), *OutputString);
 ### Sequence
 - [官方示例Slay Animation](https://www.unrealengine.com/en-US/spotlights/mold3d-studio-to-share-slay-animated-content-sample-project-with-unreal-engine-community)
 - [黑客帝国的追逐玩法](https://youtu.be/A1Nvl2MD30U?t=98&si=U728DMyuvIzvmNy8)
+- [关于怎么扩展自己的Sequence Track](https://www.linkedin.com/pulse/ue4-sequencer-custom-tracks-roma-levin)
 
 ### Streaming
 - [怎么在切换关卡时保留Actor](https://forums.unrealengine.com/t/keeping-actors-between-levels/3085?u=2bdenny)
