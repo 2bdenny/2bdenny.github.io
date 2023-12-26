@@ -71,6 +71,7 @@ void ATest::LetWwiseSpeakSomething(AActor* Actor, UAkAudioEvent* AkEvent)
   - 函数参数名不可以与class的成员名相同 F**k c++
 - [怎么把FString转换为std::string](https://stackoverflow.com/a/62973867/4291968)
 - [怎么引用其他模块的Private的Header文件（同时尽量不对其他模块进行修改）](https://forums.unrealengine.com/t/how-to-include-private-header-files-of-other-modules-into-my-module/325438/2?u=shen_yuju)
+- [什么时候加public dependency、什么时候加private dependency](https://forums.unrealengine.com/t/public-and-private-dependency-modules/318074/4?u=shen_yuju)
 
 ### Collision
 - 有时两个体型差别巨大的Pawn之间因为避障而出现奇怪的碰撞（小个子不能从大个子缝隙间通过等等），可以通过关闭RVOAvoidance来解决
