@@ -76,6 +76,8 @@ void ATest::LetWwiseSpeakSomething(AActor* Actor, UAkAudioEvent* AkEvent)
 ### Collision
 - 有时两个体型差别巨大的Pawn之间因为避障而出现奇怪的碰撞（小个子不能从大个子缝隙间通过等等），可以通过关闭RVOAvoidance来解决
   - 更好的方法应该是给大家分到合理的Group里面
+- [LineTrace为什么没有返回PhysicalMatertial](https://forums.unrealengine.com/t/physical-material-from-fhitresult-is-null/48444/2?u=shen_yuju)
+    - 需要设置CollisionQueryParams
 
 ### Crash
 - [Gpu crash/d3d device removed error](https://forums.unrealengine.com/t/gpu-crash-d3d-device-removed-error/514360/4?u=2bdenny)
