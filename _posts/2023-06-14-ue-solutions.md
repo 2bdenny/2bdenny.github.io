@@ -72,6 +72,8 @@ void ATest::LetWwiseSpeakSomething(AActor* Actor, UAkAudioEvent* AkEvent)
 - [怎么把FString转换为std::string](https://stackoverflow.com/a/62973867/4291968)
 - [怎么引用其他模块的Private的Header文件（同时尽量不对其他模块进行修改）](https://forums.unrealengine.com/t/how-to-include-private-header-files-of-other-modules-into-my-module/325438/2?u=shen_yuju)
 - [什么时候加public dependency、什么时候加private dependency](https://forums.unrealengine.com/t/public-and-private-dependency-modules/318074/4?u=shen_yuju)
+- [怎么进行自定义的ustruct的序列化]
+    - 请参考`GameplayTagExportText`
 
 ### Collision
 - 有时两个体型差别巨大的Pawn之间因为避障而出现奇怪的碰撞（小个子不能从大个子缝隙间通过等等），可以通过关闭RVOAvoidance来解决
@@ -162,6 +164,10 @@ UE_LOG(LogTemp, Warning, TEXT("resulting jsonString -> %s"), *OutputString);
 - [使用OpenLevel蓝图节点切换关卡导致蓝图Trigger失效](https://forums.unrealengine.com/t/opening-level-with-trigger-not-working-on-overlap/508767/2?u=2bdenny)
 - [Level切换的回调](https://forums.unrealengine.com/t/how-can-i-execute-code-immediately-after-loading-a-non-streaming-level/351320?u=2bdenny)
 
+### Slate
+- [怎么动态改变slot数量]
+    - 建议给Slot里面的Widget的Visisbility属性绑定函数，在函数中根据当前状态返回不同值
+
 ### Tools
 - [怎么用代码清空、写入、保存StringTable数据](https://pafuhana1213.hatenablog.com/entry/2023/01/14/153800)
 - [一个开源的icon库](https://github.com/MahApps/MahApps.Metro.IconPacks)
@@ -184,6 +190,11 @@ UE_LOG(LogTemp, Warning, TEXT("resulting jsonString -> %s"), *OutputString);
 - [如何扩展一个Menu列表](https://forums.unrealengine.com/t/is-it-possible-to-add-a-new-item-to-an-existing-toolbar-submenu/37682?u=shen_yuju)
 - [Win11不知道为什么卡死]()
     - 系统设置里关掉硬件加速
+- [自定义控件](https://udn.unrealengine.com/s/question/0D5QP000005KyZp0AK/how-to-make-a-special-widget-for-a-custom-ustruct)
+    - [怎么为自定义的struct添加自定义的面板](https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/Slate/DetailsCustomization/)
+    - [怎么把为自定义的struct添加的Widget用于自定义的蓝图pin]
+        - 请参考`SGameplayTagGraphPin`
+    - [怎么制作一个纯自定义行为和界面的蓝图节点](https://unrealist.org/custom-blueprint-nodes/)
 
 ### UI
 - [LogSlate: Warning: Slate: Had to block on waiting for a draw buffer.](https://forums.unrealengine.com/t/slate-waiting-on-draw-buffer/1295986/2?u=2bdenny)
