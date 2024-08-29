@@ -47,6 +47,8 @@ void ATest::LetWwiseSpeakSomething(AActor* Actor, UAkAudioEvent* AkEvent)
 ```
 
 - [怎么设置Wwise工程的ignore文件](https://blog.audiokinetic.com/en/version-control-a-wwise-project/)
+- [PS5平台疯狂刷sce相关的报错，WwiseMonitor刷prx加载失败]()
+    - Wwise在PS5平台与UE Audio存在兼容性问题，需要设置Wwise为项目唯一音频引擎
 
 ### Blueprint - 蓝图
 - [怎么定义多output pin的蓝图节点](https://forums.unrealengine.com/t/how-to-define-a-function-with-multiple-return-values-as-blueprint-in-c/16934/3?u=2bdenny)
