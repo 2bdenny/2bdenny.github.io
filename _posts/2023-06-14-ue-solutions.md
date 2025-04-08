@@ -54,6 +54,8 @@ void ATest::LetWwiseSpeakSomething(AActor* Actor, UAkAudioEvent* AkEvent)
 - [怎么定义多output pin的蓝图节点](https://forums.unrealengine.com/t/how-to-define-a-function-with-multiple-return-values-as-blueprint-in-c/16934/3?u=2bdenny)
 - [蓝图怎么检测null](https://forums.unrealengine.com/t/blueprints-null-actor/277986/2?u=2bdenny)
 - [蓝图的变量怎么加meta](https://github.com/rfsheffer/DetailsMetadataExtension)
+- [UObject里面怎么调用BlueprintLibrary函数/Delay函数](https://youtu.be/vETB2ZNUs5M?t=184)
+    - 加一个GetWorld就好了
 
 ### Camera - 相机
 - [UE相机基础和使用](https://zhuanlan.zhihu.com/p/564571102)
